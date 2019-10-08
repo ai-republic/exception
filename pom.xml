@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ai-republic</groupId>
+	<artifactId>exception</artifactId>
+	<version>1.0.0</version>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cdi.version>2.0.1</cdi.version>
+		<inject.version>2.6.0</inject.version>
+		<interceptor.version>1.2.2</interceptor.version>
+	</properties>
+
+	<dependencies>
+			<dependency>
+				<groupId>org.glassfish.hk2.external</groupId>
+				<artifactId>jakarta.inject</artifactId>
+				<version>${inject.version}</version>
+			</dependency>
+		<dependency>
+			<groupId>jakarta.enterprise</groupId>
+			<artifactId>jakarta.enterprise.cdi-api</artifactId>
+			<version>${cdi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ai-republic</groupId>
+			<artifactId>logging-java</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+
+</project>
