@@ -23,15 +23,14 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<cdi.version>2.0.1</cdi.version>
 		<inject.version>2.6.0</inject.version>
-		<interceptor.version>1.2.2</interceptor.version>
 	</properties>
 
 	<dependencies>
-			<dependency>
-				<groupId>org.glassfish.hk2.external</groupId>
-				<artifactId>jakarta.inject</artifactId>
-				<version>${inject.version}</version>
-			</dependency>
+		<dependency>
+			<groupId>org.glassfish.hk2.external</groupId>
+			<artifactId>jakarta.inject</artifactId>
+			<version>${inject.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>jakarta.enterprise</groupId>
 			<artifactId>jakarta.enterprise.cdi-api</artifactId>
